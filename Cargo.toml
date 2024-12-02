@@ -1,0 +1,14 @@
+[package]
+name = "aoc24"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+debug = true
+codegen-units = 1
+lto = false
+panic = "abort"
+strip = false
+
+[dependencies]
+clap = { version = "4.5.21", features = ["derive"] }
