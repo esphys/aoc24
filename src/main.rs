@@ -29,6 +29,7 @@ fn main() {
     let day_i = args.day;
 
     let mut file = format!("src/inputs/{}.txt", day_i);
+    dbg!("{:?}", &file);
     if args.file.bigboy {
         file = format!("src/inputs/{}-bb.txt", day_i);
     } else if args.file.example {
